@@ -1,5 +1,5 @@
 
-var buttonColours = ["red", "blue", "green", "yellow"];
+var buttonElements = ["CLH", "library", "admin", "hostel"];
 
 var gamePattern = [];
 var userClickedPattern = [];
@@ -17,11 +17,11 @@ $(document).keypress(function() {
 
 $(".btn").click(function() {
 
-  var userChosenColour = $(this).attr("id");
-  userClickedPattern.push(userChosenColour);
+  var userChosenElement = $(this).attr("id");
+  userClickedPattern.push(userChosenElement);
 
-  playSound(userChosenColour);
-  animatePress(userChosenColour);
+  playSound(userChosenElement);
+  animatePress(userChosenElement);
 
   checkAnswer(userClickedPattern.length-1);
 });
@@ -53,11 +53,11 @@ function nextSequence() {
   level++;
   $("#level-title").text("Level " + level);
   var randomNumber = Math.floor(Math.random() * 4);
-  var randomChosenColour = buttonColours[randomNumber];
-  gamePattern.push(randomChosenColour);
+  var randomChosenElement = buttonElements[randomNumber];
+  gamePattern.push(randomChosenElement);
 
-  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
-  playSound(randomChosenColour);
+  $("#" + randomChosenElement).fadeIn(100).fadeOut(100).fadeIn(100);
+  playSound(randomChosenElement);
 }
 
 function animatePress(currentColor) {
