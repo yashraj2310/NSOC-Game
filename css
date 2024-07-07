@@ -31,7 +31,7 @@
   opacity: 0.8;
 }
 
-.red {
+.CLH {
   background-image: url(./images1/32640d9a547cc1731ae3381fc8179349cbcf24f9.jpg); 
   background-size: cover; 
   background-position: center; 
@@ -42,7 +42,7 @@
 }
 
 
-  .green {
+  .admin {
     background-image: url(./images1/06e6f2990cc4498dad363332a30a240a0ae94d75.jpg); 
     background-size: cover; 
     background-position: center; 
@@ -54,7 +54,7 @@
   
 
 
-.blue {
+.library {
   background-image: url(./images1/a66b2420f1fdce31bca3a493d5be108ffd875551.jpg); 
     background-size: cover; 
     background-position: center; 
@@ -64,7 +64,7 @@
     width: 200px;
 }
 
-.yellow {
+.hostel {
   background-image: url(./images1/e663fff492ecb154886bfaa1baa697b8a9bcf1b3.jpg); 
   background-size: cover; 
   background-position: center; 
